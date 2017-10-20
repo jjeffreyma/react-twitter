@@ -1,0 +1,56 @@
+body {
+  background-color: whitesmoke;
+  font-family: "Helvetica Neue", Roboto, "Segoe UI", Calibri, sans-serif;
+  font-size: 12px;
+}
+
+.App {
+  margin: auto;
+  padding-bottom: 80px;
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.tweet-list-item {
+  display: inline-block;
+  line-height: 16px;
+  border-color: #eee #ddd #bbb;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+  margin: 10px 5px;
+  padding: 0 16px 16px 16px;
+  width: 70%;
+  text-decoration: none;
+  animation: 1s ease-out 0s 1 slide;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateY(-20%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.tweet-list-item:hover,
+.tweet-list-item:focus {
+  text-decoration: underline;
+}
+
+@media (min-width: 1000px) {
+  .tweet-list-item {
+    width: 600px;
+  }
+}
+
+@media (max-width: 600px) {
+  .tweet-list-item {
+    width: 90%;
+  }
+}
