@@ -19,7 +19,6 @@ app.get('/', (req, res) => {
 });
 
 app.get('/search', (req, res) => {
-  let postData;
   const searchParams = {
     q: req.query.q,
     count: 10
